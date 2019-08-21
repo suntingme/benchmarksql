@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # ----
 # Check command line usage
 # ----
@@ -8,11 +9,12 @@ if [ $# -ne 2 ] ; then
     exit 2
 fi
 echo $1
+
 # ----
 # Load common functions
 # ----
 source funcs.sh $1
-echo "load success"
+
 # ----
 # Determine which SQL file to use.
 #
@@ -39,7 +41,7 @@ else
 	fi
     fi
 fi
-echo "success ends"
+
 # ----
 # Set myCP according to the database type.
 # ----
@@ -50,6 +52,7 @@ echo "# Loading SQL file ${SQL_FILE}"
 echo "# ------------------------------------------------------------"
 myOPTS="-Dprop=$1"
 myOPTS="$myOPTS -DcommandFile=${SQL_FILE}"
+
 echo $myCP
 echo $myOPTS
 java -cp "$myCP" $myOPTS ExecJDBC

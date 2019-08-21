@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # ----
 # Script to generate the detail graphs of a BenchmarkSQL run.
 #

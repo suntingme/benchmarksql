@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ $# -ne 1 ] ; then
     echo "usage: $(basename $0) RESULT_DIR" >&2
     exit 2

@@ -50,6 +50,7 @@ dbtmp=$(getProp db)
     myCP=".:${cp}:../dist/*"
     export myCP
 }
+
 # ----
 # Make sure that the properties file does have db= and the value
 # is a database, we support.
@@ -64,4 +65,5 @@ dbtmp=$(getProp db)
 #	exit 1
 #	;;
 #esac
+
 

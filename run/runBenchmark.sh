@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ $# -ne 1 ] ; then
     echo "usage: $(basename $0) PROPS_FILE" >&2
     exit 2
